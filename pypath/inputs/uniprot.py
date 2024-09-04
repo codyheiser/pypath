@@ -338,7 +338,7 @@ def get_uniprot_sec(organism = 9606):
 
     if organism not in (None, constants.NOT_ORGANISM_SPECIFIC):
 
-        proteome = all_uniprots(organism=organism)
+        proteome = _all_uniprots(organism=organism)
         proteome = set(proteome)
 
     sec_pri = []
